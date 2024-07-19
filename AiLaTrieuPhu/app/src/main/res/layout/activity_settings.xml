@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#424242">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/set_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/img_music"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/icon_music"/>
+
+        <TextView
+            android:id="@+id/iv_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Nhạc nền"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/img_music"
+            app:layout_constraintRight_toLeftOf="@id/tog_music"/>
+
+        <ToggleButton
+            android:id="@+id/tog_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="124dp"
+            android:background="@drawable/toggle_button_on"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintLeft_toRightOf="@id/iv_music" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/set_music">
+
+        <ImageView
+            android:id="@+id/img_sound"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_sound"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/iv_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Âm thanh"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/img_sound"
+            app:layout_constraintRight_toLeftOf="@id/tog_sound"
+            tools:ignore="MissingConstraints" />
+
+        <ToggleButton
+            android:id="@+id/tog_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="124dp"
+            android:background="@drawable/toggle_button_on"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintLeft_toRightOf="@id/iv_sound"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

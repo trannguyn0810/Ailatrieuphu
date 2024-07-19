@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    tools:context="com.bkacad.nnt.ailatrieuphu.fragments.HomeFragment">
+
+        <TextView
+            android:id="@+id/bg_circle_anim"
+            android:layout_width="0dp"
+            android:layout_height="500dp"
+            android:background="@drawable/bg_circle_anim"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/tv_img"
+            android:layout_width="300dp"
+            android:layout_height="550dp"
+            android:src="@drawable/ailatrieuphu"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="MissingConstraints"/>
+
+        <ImageButton
+            android:id="@+id/btn_play"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_play"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bg_circle_anim"
+            android:contentDescription="Description for the ImageButton"/>
+
+        <ImageButton
+            android:id="@+id/btn_about"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="60dp"
+            android:background="@drawable/home_button_about"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@id/btn_high_score"
+            app:layout_constraintTop_toBottomOf="@id/btn_play"
+            android:contentDescription="Description for the ImageButton"/>
+
+        <ImageButton
+            android:id="@+id/btn_high_score"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="60dp"
+            android:background="@drawable/home_button_archivement"
+            app:layout_constraintLeft_toLeftOf="@id/btn_about"
+            app:layout_constraintRight_toRightOf="@id/btn_setting"
+            app:layout_constraintTop_toBottomOf="@id/btn_play"
+            android:contentDescription="Description for the ImageButton"/>
+
+        <ImageButton
+            android:id="@+id/btn_setting"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="60dp"
+            android:background="@drawable/home_button_setting"
+            app:layout_constraintLeft_toLeftOf="@id/btn_high_score"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_play"
+            android:contentDescription="Description for the ImageButton"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

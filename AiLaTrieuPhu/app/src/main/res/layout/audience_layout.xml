@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#292726">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bg_title"
+        android:background="@drawable/player_layout_help_call_audience_background"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:gravity="center_horizontal"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="3dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ln_1"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="155dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/ln_2"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_pesent_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/bar_1"
+                    android:paddingTop="10dp"
+                    android:text="0%"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TextView
+                    android:id="@+id/bar_1"
+                    android:layout_width="32dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="22dp"
+                    android:background="#098"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="35dp"
+                    android:text="A"
+                    android:textColor="#dbe206"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ln_2"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="155dp"
+                app:layout_constraintLeft_toRightOf="@id/ln_1"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_pesent_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/bar_2"
+                    android:paddingTop="10dp"
+                    android:text="0%"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TextView
+                    android:id="@+id/bar_2"
+                    android:layout_width="32dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="22dp"
+                    android:background="#098"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="35dp"
+                    android:text="B"
+                    android:textColor="#dbe206"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ln_3"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="155dp"
+                app:layout_constraintLeft_toRightOf="@id/ln_2"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_pesent_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/bar_3"
+                    android:paddingTop="10dp"
+                    android:text="0%"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TextView
+                    android:id="@+id/bar_3"
+                    android:layout_width="32dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="22dp"
+                    android:background="#098"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="35dp"
+                    android:text="C"
+                    android:textColor="#dbe206"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ln_4"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="155dp"
+                app:layout_constraintLeft_toRightOf="@id/ln_3"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_pesent_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/bar_4"
+                    android:paddingTop="10dp"
+                    android:text="0%"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TextView
+                    android:id="@+id/bar_4"
+                    android:layout_width="32dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="22dp"
+                    android:background="#098"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="35dp"
+                    android:text="D"
+                    android:textColor="#dbe206"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_line"
+            android:layout_width="250dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="180dp"
+            android:background="#ffffff"/>
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:text="Đóng"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/rl_1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="#ffffff"
+            android:background="@drawable/dialog_confirm_background_button"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textViewFeedback"
+        android:layout_width="172dp"
+        android:layout_height="50dp"
+        android:background="@drawable/player_layout_help_call_title_background"
+        android:gravity="center"
+        android:text="Ý kiến khán giả"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="243dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

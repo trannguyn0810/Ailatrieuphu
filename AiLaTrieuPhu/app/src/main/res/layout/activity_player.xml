@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/player_layout"
+    tools:context="com.bkacad.nnt.ailatrieuphu.activity.PlayerActivity">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/ln_play"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:id="@+id/ln_title"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.8"
+           android:background="#ff210030"
+           android:padding="5dp"
+           tools:ignore="MissingConstraints">
+
+           <TextView
+               android:id="@+id/tv_timer"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:text="30"
+               android:textColor="#ffffff"
+               android:textSize="18sp"
+               android:textStyle="bold"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintRight_toRightOf="parent"/>
+
+           <ProgressBar
+               android:id="@+id/pg_timer"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:indeterminateDrawable="@drawable/progressbar_time"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintRight_toRightOf="parent"/>
+
+           <ImageView
+               android:id="@+id/iv_money"
+               android:layout_width="22dp"
+               android:layout_height="22dp"
+               android:src="@drawable/img_money"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintLeft_toRightOf="@id/iv_player"
+               android:layout_marginLeft="220dp"/>
+
+           <TextView
+               android:id="@+id/tv_money"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="5dp"
+               android:text="150,000,000"
+               android:textColor="#ffffff"
+               android:textSize="18sp"
+               android:textStyle="bold"
+               app:layout_constraintLeft_toRightOf="@id/iv_money"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"/>
+
+           <ImageView
+               android:id="@+id/iv_player"
+               android:layout_width="48dp"
+               android:layout_height="48dp"
+               android:src="@drawable/ic_no_avatar"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true" />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <TableRow
+           android:id="@+id/ln_choose"
+           android:layout_width="match_parent"
+           android:layout_height="90dp"
+           android:layout_weight="1"
+           android:gravity="center"
+           app:layout_constraintTop_toBottomOf="@+id/ln_title">
+
+           <ImageButton
+               android:id="@+id/btn_stop"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_margin="16dp"
+               android:layout_weight="1"
+               android:background="@drawable/btn_stop_bg"
+               android:contentDescription="stop"/>
+
+           <ImageButton
+               android:id="@+id/btn_change"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_margin="16dp"
+               android:layout_weight="1"
+               android:background="@drawable/btn_change_bg"
+               android:contentDescription="change"/>
+
+           <ImageButton
+               android:id="@+id/btn_5050"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_margin="16dp"
+               android:layout_weight="1"
+               android:background="@drawable/btn_5050_bg"
+               android:contentDescription="fifty_five"/>
+
+           <ImageButton
+               android:id="@+id/btn_audience"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_margin="16dp"
+               android:layout_weight="1"
+               android:background="@drawable/btn_audience_bg"
+               android:contentDescription="people"/>
+
+           <ImageButton
+               android:id="@+id/btn_call"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_margin="16dp"
+               android:layout_weight="1"
+               android:background="@drawable/btn_call_bg"
+               android:contentDescription="call"/>
+
+       </TableRow>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:id="@+id/ln_qs"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="3"
+           app:layout_constraintTop_toBottomOf="@id/ln_choose"
+           tools:ignore="MissingConstraints">
+
+           <TextView
+               android:id="@+id/tv_question"
+               android:layout_width="match_parent"
+               android:layout_height="182dp"
+               android:background="@drawable/player_question_background"
+               android:gravity="center"
+               android:padding="20dp"
+               android:text="Bảo tàng Hồ Chí Minh ở thủ đô Hà Nội được thiết kế theo hình dáng loại hoa nào?"
+               android:textColor="@android:color/holo_orange_light"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/tv_level"
+               android:layout_width="240dp"
+               android:layout_height="36dp"
+               android:background="@drawable/player_order_question"
+               android:gravity="center"
+               android:text="Câu 1"
+               app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintLeft_toLeftOf="parent"
+               android:textColor="#9C27B0"
+               android:textSize="18sp"
+               android:textStyle="bold"/>
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@id/ln_qs"
+           android:paddingTop="70dp"
+           android:paddingLeft="32dp"
+           android:paddingRight="32dp"
+           tools:ignore="MissingConstraints">
+
+           <TextView
+               android:id="@+id/tv_case_a"
+               android:layout_width="match_parent"
+               android:layout_height="70dp"
+               android:background="@drawable/btn_answer"
+               android:gravity="center_vertical"
+               android:paddingLeft="58dp"
+               android:text="A: Hoa hồng"
+               android:textColor="#ffffff"
+               app:layout_constraintLeft_toLeftOf="parent"
+               app:layout_constraintRight_toRightOf="parent"/>
+
+           <TextView
+               android:id="@+id/tv_case_b"
+               android:layout_width="match_parent"
+               android:layout_height="70dp"
+               android:background="@drawable/btn_answer"
+               android:gravity="center_vertical"
+               android:paddingLeft="58dp"
+               android:text="B: Hoa đào"
+               android:textColor="#ffffff"
+               app:layout_constraintTop_toBottomOf="@id/tv_case_a"/>
+
+           <TextView
+               android:id="@+id/tv_case_c"
+               android:layout_width="match_parent"
+               android:layout_height="70dp"
+               android:background="@drawable/btn_answer"
+               android:gravity="center_vertical"
+               android:paddingLeft="58dp"
+               android:text="C: Hoa sen"
+               android:textColor="#ffffff"
+               app:layout_constraintTop_toBottomOf="@id/tv_case_b"/>
+
+           <TextView
+               android:id="@+id/tv_case_d"
+               android:layout_width="match_parent"
+               android:layout_height="70dp"
+               android:background="@drawable/btn_answer"
+               android:gravity="center_vertical"
+               android:paddingLeft="58dp"
+               android:text="D: Hoa hướng dương"
+               android:textColor="#ffffff"
+               app:layout_constraintTop_toBottomOf="@id/tv_case_c"/>
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/player_layout_money"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
